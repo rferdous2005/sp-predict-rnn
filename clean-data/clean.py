@@ -6,7 +6,8 @@ import numpy as np
 
 
 def formatDateDayIndex(year):
-    df = pd.read_csv("DSE-"+str(year)+".csv")
+    clean_df = pd.read_csv("DSE-"+str(year)+".csv")
+    raw_df = pd.read_csv("../raw-data/DSE-"+str(year)+".csv")
     print("Count "+str(year)+" "+str(len(df)))
     days = []
     
